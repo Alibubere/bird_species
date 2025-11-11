@@ -5,12 +5,10 @@ import random
 
 base_dir = "data\images"
 
-# List categories
 categories = os.listdir(base_dir)
 print(f"Number of species: {len(categories)}")
 print("Example species:", categories[:5])
 
-# View random images
 random_species = random.choice(categories)
 species_path = os.path.join(base_dir, random_species)
 sample_images = os.listdir(species_path)[:5]
